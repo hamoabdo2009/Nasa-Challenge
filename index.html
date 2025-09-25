@@ -1,0 +1,133 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Six Pyramids — NASA Challenge</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+    <!-- Header -->
+    <header class="site-header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a class="brand" href="#hero" aria-label="The Six Pyramids home">
+            <svg class="logo-svg" width="36" height="28" viewBox="0 0 36 28" aria-hidden="true">
+            <defs>
+                <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0" stop-color="#d4af37"/>
+                <stop offset="1" stop-color="#f0d57a"/>
+                </linearGradient>
+            </defs>
+            <polygon points="18,2 2,26 34,26" fill="url(#g1)" />
+            </svg>
+            <span class="brand-text">The Six Pyramids</span>
+        </a>
+
+        <ul id="nav-links" class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#problem">Problem</a></li>
+            <li><a href="#Data">Data</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- Hero -->
+        <section id="hero" class="hero" aria-labelledby="hero-heading">
+        <div class="hero-text">
+            <h1 id="hero-heading">Welcome to <span class="accent">The Six Pyramids</span></h1>
+            <p class="lead">Data-driven solutions for climate risks — clear problem, reproducible data, actionable mitigation.</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+            <svg viewBox="0 0 300 200" class="pyramids">
+            <defs>
+                <linearGradient id="goldG" x1="0" x2="1">
+                <stop offset="0" stop-color="#d4af37"/>
+                <stop offset="1" stop-color="#f0d57a"/>
+                </linearGradient>
+                <linearGradient id="bgG" x1="0" x2="1">
+                <stop offset="0" stop-color="#0b2b4a"/>
+                <stop offset="1" stop-color="#001f3f"/>
+                </linearGradient>
+            </defs>
+            <rect width="300" height="200" fill="url(#bgG)"/>
+            <polygon points="60,160 150,30 240,160" fill="url(#goldG)" opacity="0.12"/>
+            </svg>
+        </div>
+        </section>
+
+        <!-- Problem -->
+        <section class="cards-area">
+        <article id="problem" class="card">
+            <header class="card-head">
+            <h3 id="problem-title">Problem</h3>
+            </header>
+            <div class="card-body">
+            <p>Write a concise, measurable problem statement here (data sources, time range, affected population).</p>
+            <ul class="highlight-list">
+                <li><strong>Datasets:</strong> satellite timeseries, local sensors</li>
+                <li><strong>Key metrics:</strong> sea-level rise, temperature anomaly, flood freq.</li>
+            </ul>
+            </div>
+        </article>
+        </section>
+
+            <section class="cards-area">
+        <article id="problem" class="card">
+            <header class="card-head">
+            <h3 id="problem-title">Problem</h3>
+            </header>
+            <div class="card-body">
+            <p>Write a concise, measurable problem statement here (data sources, time range, affected population).</p>
+            <ul class="highlight-list">
+                <li><strong>Datasets:</strong> satellite timeseries, local sensors</li>
+                <li><strong>Key metrics:</strong> sea-level rise, temperature anomaly, flood freq.</li>
+            </ul>
+            </div>
+        </article>
+
+        <section class="cards-area">
+        <article id="Data" class="card">
+            <header class="card-head">
+            <h3 id="Data-title">Data</h3>
+            </header>
+            <div class="card-body">
+            <p>Write a concise, measurable problem statement here (data sources, time range, affected population).</p>
+            <ul class="highlight-list">
+                <li><strong>Datasets:</strong> satellite timeseries, local sensors</li>
+                <li><strong>Key metrics:</strong> sea-level rise, temperature anomaly, flood freq.</li>
+            </ul>
+            </div>
+        </article>
+        <!-- Contact -->
+        <section id="contact" class="contact-section">
+        <h3>Contact Us</h3>
+        <p class="contact-note">Have questions or ideas? Get in touch.</p>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <button type="submit" class="submit-btn">Send</button>
+        </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+        <small>&copy; <span id="year"></span> The Six Pyramids — NASA Challenge</small>
+        </div>
+        <div>
+        <small>Developed by Mohamed Abdo</small>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    </body>
+    </html>

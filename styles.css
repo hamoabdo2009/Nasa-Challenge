@@ -1,0 +1,183 @@
+    :root {
+    --gold: #d4af37;
+    --gold-2: #f0d57a;
+    --dark-blue: #001f3f;
+    --mid-blue: #0b2b4a;
+    --light-blue: #87ceeb;
+    --bg: #000;
+    --card-bg: rgba(255,255,255,0.02);
+    --max-width: 1100px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+
+    body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #000 0%, #020202 100%);
+    color: var(--gold);
+    line-height: 1.5;
+    }
+
+    /* Header */
+    .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 60;
+    backdrop-filter: blur(6px);
+    background: linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.25));
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+    }
+
+    .nav {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    }
+
+    .brand {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    color: var(--gold);
+    font-weight: 700;
+    }
+
+    .nav-links {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+
+    .nav-links a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: all 160ms ease;
+    }
+
+    .nav-links a:hover {
+    color: var(--light-blue);
+    background: rgba(255,255,255,0.02);
+    }
+
+    /* Hero */
+    .hero {
+    max-width: var(--max-width);
+    margin: 24px auto;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 28px;
+    align-items: center;
+    padding: 28px 20px;
+    background: linear-gradient(90deg, var(--mid-blue) 0%, rgba(0,0,0,0.6) 100%);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(2,6,23,0.7);
+    }
+
+    .hero-text h1 {
+    margin: 0 0 12px;
+    font-size: 34px;
+    color: var(--gold);
+    }
+
+    .accent { color: var(--gold-2); }
+    .lead { color: var(--light-blue); font-size: 16px; margin-bottom: 12px; }
+
+    .btn {
+    display: inline-block;
+    background: var(--gold);
+    color: #001f3f;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 150ms ease;
+    }
+    .btn:hover { background: var(--light-blue); color: #000; }
+
+    /* Cards */
+    .cards-area {
+    max-width: var(--max-width);
+    margin: 20px auto;
+    padding: 0 20px;
+    }
+
+    .card {
+    background: var(--card-bg);
+    border: 1px solid rgba(255,255,255,0.03);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(62,65,82,0.6);
+    }
+
+    .card-head h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 10px;
+    }
+
+    .card-body p { color: rgba(212,175,55,0.95); }
+
+    /* Contact */
+    .contact-section {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 20px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(62,65,82,0.6);
+    }
+
+    .contact-section h3 {
+    text-align: center;
+    color: var(--light-blue);
+    margin-bottom: 10px;
+    }
+
+    #contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+    background: #111;
+    color: var(--gold);
+    border: 1px solid rgba(212,175,55,0.95);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    }
+
+    .submit-btn {
+    background: var(--gold);
+    color: #001f3f;
+    border: 0;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    }
+    .submit-btn:hover { background: var(--light-blue); color: #000; }
+
+    /* Footer */
+    .site-footer {
+    max-width: var(--max-width);
+    margin: 24px auto 40px;
+    padding: 12px 20px;
+    text-align: center;
+    color: var(--gold-2);
+    }
